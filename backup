@@ -1,0 +1,20 @@
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Center the content vertically */
+    background: linear-gradient(45deg, rgba(81, 0, 143, 0.8), rgb(0, 179, 15));
+    background-size: 200% 200%; /* Adjust this to make the animation more noticeable */
+    animation: gradientAnimation 6s ease infinite;
+}
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
